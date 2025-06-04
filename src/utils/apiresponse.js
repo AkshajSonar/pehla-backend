@@ -6,11 +6,11 @@ class ApiResponse {
     this.success = statusCode < 400;
   }
 
-  static success(message, data = null) {
-    return new ApiResponse('success', message, data);
+  static success(data = null, message = "Operation successful") {
+    return new ApiResponse(200, data, message);
   }
 
   static error(message, data = null) {
-    return new ApiResponse('error', message, data);
+    return new ApiResponse(500, data, message);
   }
 }
