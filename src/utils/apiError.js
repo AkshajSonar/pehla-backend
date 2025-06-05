@@ -1,4 +1,4 @@
-import { sup } from "framer-motion/client";
+
 
 class ApiError extends Error {
   constructor(statusCode, message = "An error occurred",errors = [],stack = ""){
