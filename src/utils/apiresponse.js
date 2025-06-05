@@ -14,3 +14,5 @@ class ApiResponse {
     return new ApiResponse(500, data, message);
   }
 }
+
+export default ApiResponse;
